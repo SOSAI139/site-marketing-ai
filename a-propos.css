@@ -1,0 +1,73 @@
+/* Créé par Jonathan Roux - Utilisation interdite dans une autre formation */
+
+div.contenu-a-propos p {
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.headingframe1 {
+  align-self: stretch;
+  display: flex;
+}
+.headingframe1 {
+  background-color: var(--color-black);
+  flex-direction: column;
+  padding: var(--padding-5xl) 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+.banniere-a-propos {
+  max-width: 100%;
+  overflow: hidden;
+  height: 389px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.banniere-a-propos,
+.ligne-separation,
+.titre-a-propos {
+  align-self: stretch;
+  position: relative;
+}
+.titre-a-propos {
+  line-height: 44px;
+  font-weight: 800;
+  font-size: var(--font-size-23xl);
+}
+.ligne-separation {
+  border-top: 1px solid rgba(86, 89, 115, 0.28);
+  box-sizing: border-box;
+  height: 1px;
+  max-width: 900px;
+}
+.contenu-a-propos {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-lg);
+  color: var(--color-slategray-100);
+  display: inline-block;
+  max-width: 900px;
+}
+
+.header-and-frame {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+}
+
+.contenaire-a-propos {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-42xl) var(--padding-31xl);
+  gap: 45px;
+  font-size: var(--font-size-23xl);
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 960px) {
+  .services2 {
+    font-size: var(--font-size-mini);
+  }
+}

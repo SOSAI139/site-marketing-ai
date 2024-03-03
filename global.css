@@ -1,0 +1,259 @@
+/* Créé par Jonathan Roux - Utilisation interdite dans une autre formation */
+
+body {
+  margin: 0;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  font-family: var(--font-manrope);
+}
+
+:root {
+
+  /* Paramètres */
+  --nom-marque: 'SOS Marketing IA';
+  --taille-logo: 30px;
+  --fichier-logo: url("./public/logo@2x.png");
+
+  /* fonts */
+  --font-manrope: Manrope;
+
+  /* font sizes */
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-3xl: 22px;
+  --font-size-xl: 20px;
+  --font-size-10xl: 28px;
+  --font-size-11xl: 30px;
+  --font-size-23xl: 42px;
+  --font-size-mini: 15px;
+  --font-size-14xl: 33px;
+  --font-size-15xl: 36px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray-100: rgba(255, 255, 255, 0.8);
+  --color-mediumslateblue: #6366f1;
+  --color-slategray-100: #565973;
+
+  /* Gaps */
+  --gap-mini: 15px;
+  --gap-3xs: 10px;
+  --gap-sm: 14px;
+  --gap-21xl: 40px;
+  --gap-41xl: 60px;
+  --gap-27xl: 46px;
+  --gap-13xl: 32px;
+  --gap-0: 0px;
+  --gap-16xl: 35px;
+
+  /* Paddings */
+  --padding-lg: 18px;
+  --padding-21xl: 40px;
+  --padding-27xl: 46px;
+  --padding-8xl: 27px;
+  --padding-10xs: 3px;
+  --padding-42xl: 61px;
+  --padding-5xl: 24px;
+  --padding-mini: 15px;
+  --padding-31xl: 50px;
+
+  /* border radiuses */
+  --br-mini: 15px;
+  --br-8xs: 5px;
+}
+
+
+h1 { 
+  margin: 0;
+  font-size: 50px;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+.marque {
+  position: relative;
+  line-height: 168.6%;
+  font-weight: 800;
+}
+
+.marque::after {
+  content: var(--nom-marque);
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-mini);
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+  text-decoration: none;
+  color: white;
+}
+
+.logo-image {
+  background-image: var(--fichier-logo);
+  background-size: cover;
+  width: var(--taille-logo);
+  height: var(--taille-logo);
+}
+
+div.menu a {
+  position: relative;
+  line-height: 44px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-slategray-100);
+}
+
+div.menu a:hover {
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu {
+  padding: 0 var(--padding-21xl);
+  justify-content: flex-end;
+  gap: var(--gap-16xl);
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-slategray-100);
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+  height: 42.6px;
+  padding: 0 var(--padding-mini);
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.couleur-accent {
+  color: var(--color-mediumslateblue);
+}
+
+.logo2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+
+.termes-et-conditions {
+  margin: 0;
+}
+.termes-et-conditions-container {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 245.1%;
+  font-weight: 500;
+  text-align: right;
+}
+.footercontent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-27xl) 0;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+
+.ai-marketing-droits {
+  position: relative;
+  font-size: var(--font-size-sm);
+  line-height: 245.1%;
+  font-weight: 500;
+  color: var(--color-gray-100);
+  text-align: center;
+}
+
+.ai-marketing-droits::before {
+  content: '© ' var(--nom-marque)
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  background-color: var(--color-black);
+  padding: var(--padding-lg) var(--padding-21xl);
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+
+.space {
+  align-self: stretch;
+  height: 42px;
+}
+
+@media screen and (max-width: 580px) {
+  .footercontent,
+  .logo2 {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .logo2 {
+    flex-direction: row;
+    gap: var(--gap-mini);
+    flex: unset;
+    align-self: stretch;
+  }
+  .footercontent {
+    flex-direction: column;
+    gap: var(--gap-21xl);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .logo {
+    flex-direction: row;
+    gap: var(--gap-mini);
+    align-items: center;
+    justify-content: flex-start;
+    flex: unset;
+    align-self: stretch;
+  }
+  .menu {
+    display: none;
+  }
+  
+  #header {
+    flex-direction: column;
+    gap: var(--gap-0);
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .ai-marketing {
+    font-size: var(--font-size-xl);
+  }
+}

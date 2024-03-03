@@ -1,0 +1,258 @@
+/* Créé par Jonathan Roux - Utilisation interdite dans une autre formation */
+
+.titre {
+  position: relative;
+  font-weight: 800;
+  display: inline-block;
+  max-width: 783px;
+  font-size: 80px;
+}
+.texte-accroche {
+  font-weight: 300;
+}
+.texte-accroche-gras {
+  font-weight: 600;
+  color: var(--color-white);
+}
+.contactez-nous,
+.sous-titre {
+  position: relative;
+}
+.sous-titre {
+  font-size: 24px;
+  line-height: 44px;
+  display: inline-block;
+  max-width: 627px;
+  color: var(--color-slategray-100);
+}
+.contactez-nous {
+  flex: 1;
+  font-size: var(--font-size-xl);
+  line-height: 168.6%;
+  display: flex;
+  font-family: var(--font-manrope);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.boutoncontact,
+.button-frame,
+.headingcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boutoncontact {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-mediumslateblue);
+  align-self: stretch;
+  border-radius: var(--br-mini);
+  box-shadow: 0 5px 14px rgba(126, 128, 245, 0.4);
+  height: 63px;
+  justify-content: center;
+}
+.button-frame,
+.headingcontent {
+  justify-content: flex-start;
+}
+.button-frame {
+  width: 299px;
+  padding: var(--padding-8xl) var(--padding-10xs) 0;
+  box-sizing: border-box;
+}
+.headingcontent {
+  align-self: stretch;
+  padding: 0 75px;
+  gap: 49px;
+  text-align: center;
+  font-size: 80px;
+}
+.check-icon {
+  position: relative;
+  width: 26px;
+  height: 30px;
+}
+.avantage {
+  position: relative;
+  line-height: 168.6%;
+}
+.detail {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.details,
+.headingframe {
+  align-self: stretch;
+  display: flex;
+}
+.details {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20px 17px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 39px;
+  font-size: var(--font-size-lg);
+  color: var(--color-slategray-100);
+}
+.headingframe {
+  flex-direction: column;
+  padding: var(--padding-5xl) 0;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 87px;
+  background-image: url(./public/headingframe@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.titre-services {
+  font-size: var(--font-size-23xl);
+  line-height: 44px;
+  font-weight: 800;
+  text-align: center;
+}
+.texte-service,
+.titre-services,
+.titre-service {
+  align-self: stretch;
+  position: relative;
+}
+.titre-service {
+  line-height: 42px;
+  font-weight: 800;
+  font-size: var(--font-size-11xl);
+}
+.texte-service {
+  font-size: var(--font-size-lg);
+  color: var(--color-slategray-100);
+}
+.titre-et-texte-service {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.image-service {
+  position: relative;
+  border-radius: var(--br-8xs);
+  width: 260px;
+  height: 200px;
+  object-fit: cover;
+}
+.service,
+.conteneur-services {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.service {
+  flex-direction: row;
+  gap: var(--gap-41xl);
+}
+.conteneur-services {
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-42xl) 30px;
+  box-sizing: border-box;
+  gap: 74px;
+  max-width: 900px;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+}
+.titre-contact {
+  position: relative;
+  line-height: 44px;
+  font-weight: 800;
+  font-size: 41px;
+}
+.text-contact {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 44px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.contactus,
+.contactusframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.contactusframe {
+  border-radius: 8px;
+  padding: 83px 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 16px;
+  background-image: url(./public/contactusframe@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 1100px;
+}
+.contactus {
+  padding: 45px var(--padding-21xl);
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 41px;
+  width: 95%;
+}
+
+@media screen and (max-width: 960px) {
+  .titre {
+    font-size: 60px;
+  }
+  .sous-titre {
+    font-size: var(--font-size-3xl);
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .service {
+    flex-direction:column-reverse;
+    gap: var(--gap-27xl);
+  }
+
+  .service > img {
+    width: 100%;
+    margin-top: 20px;
+    height: 300px;
+  }
+
+  .titre-services, .titre-contact {
+    font-size: 35px;
+  }
+}
+
+
+@media screen and (max-width: 580px) {
+  .titre {
+    font-size: 45px;
+  }
+  .sous-titre {
+    line-height: 30px;
+  }
+  .contactez-nous,
+  .sous-titre {
+    font-size: var(--font-size-lg);
+  }
+  .boutoncontact {
+    height: 55px;
+  }
+  .titre-et-texte-service {
+    flex: unset;
+    align-self: stretch;
+  }
+}

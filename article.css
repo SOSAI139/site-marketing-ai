@@ -1,0 +1,162 @@
+/* Créé par Jonathan Roux - Utilisation interdite dans une autre formation */
+
+div.contenu p, li {
+  font-size: var(--font-size-lg);
+  color: var(--color-slategray-100);
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+}
+
+th {
+  font-weight: 800;
+  background-color: #eaeff3;
+}
+
+th, td {
+  padding: 15px;
+  font-size: 16px;
+  color: var(--color-slategray-100);
+}
+
+h2 {
+  font-size: 34px;
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 35px;
+}
+
+div.contenu a {
+  color: var(--color-slategray-100);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+div.contenu a:hover {
+  opacity: 0.7;
+}
+
+ol {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 35px;
+}
+
+div.contenu p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: 1.5em;
+}
+
+.services3 {
+  position: relative;
+  line-height: 44px;
+}
+.headingframe2 {
+  align-self: stretch;
+  display: flex;
+  background-color: var(--color-black);
+  flex-direction: column;
+  padding: var(--padding-5xl) 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+.titre-article {
+  /*align-self: stretch;*/
+  position: relative;
+  font-weight: 800;
+  display: flex;
+  max-width: 900px;
+  font-size: var(--font-size-23xl);
+  text-align: center;
+}
+.titre1 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-21xl) var(--padding-31xl);
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--font-size-23xl);
+  color: var(--color-black);
+}
+.banniere-article {
+  max-width: 100%;
+  overflow: hidden;
+  height: 289px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.accroche,
+.banniere-article,
+.titre-paragraphe {
+  align-self: stretch;
+  position: relative;
+}
+.accroche {
+  font-size: var(--font-size-xl);
+}
+.titre-paragraphe {
+  line-height: 44px;
+  font-weight: 800;
+  display: flex;
+  align-items: flex-end;
+  height: 63px;
+  flex-shrink: 0;
+}
+.contenu-paragraphe {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-lg);
+  color: var(--color-slategray-100);
+}
+
+.contenu {
+  /*align-self: stretch;*/
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 51px var(--padding-31xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 41px;
+  max-width: 900px;
+  font-size: var(--font-size-14xl);
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 960px) {
+  .services3 {
+    font-size: var(--font-size-mini);
+  }
+
+  .titre1 {
+    font-size: var(--font-size-15xl);
+  }
+
+  .contenu {
+    font-size: var(--font-size-10xl);
+  }
+
+  .accroche {
+    font-size: var(--font-size-lg);
+  }
+
+  .contenu-paragraphe {
+    font-size: var(--font-size-base);
+  }
+}
